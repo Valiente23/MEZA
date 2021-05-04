@@ -8,6 +8,9 @@
   animation-name: aparecer;
   animation-duration: 0.3s; }
 
+a {
+  text-decoration: none; }
+
 body {
   font-family: 'League', sans-serif; }
   body::-webkit-scrollbar {
@@ -18,11 +21,6 @@ body {
     border-radius: 7px; }
   body ul {
     padding: 0; }
-  body a:link {
-    color: #242424;
-    text-decoration: none; }
-  body a:visited {
-    color: #242424; }
 
 header {
   text-decoration: none;
@@ -53,13 +51,19 @@ header {
         header .nav__ul .nav__li:hover {
           background-color: #ebebeb;
           border-radius: 5px; }
+        header .nav__ul .nav__li a:link {
+          color: #242424;
+          text-decoration: none; }
+        header .nav__ul .nav__li a:visited {
+          color: #242424; }
         header .nav__ul .nav__li ul {
           position: absolute;
           display: none; }
           header .nav__ul .nav__li ul li {
             font-family: 'Questrial', sans-serif;
-            font-weight: 800;
-            font-size: 1.2em;
+            font-weight: 600;
+            font-size: 1.4em;
+            text-shadow: none;
             display: block;
             padding: 8px;
             background-color: #f3f3f3;
@@ -98,7 +102,7 @@ header {
   .destacado__title {
     font-size: 2em;
     font-weight: 100;
-    color: #f3eee9;
+    color: #f3f3f3;
     text-align: center;
     margin: 0;
     padding: 40px 0 30px 0;
@@ -122,6 +126,7 @@ header {
     font-weight: 600;
     font-family: 'Questrial', sans-serif;
     color: #f3f3f3;
+    margin: 0;
     text-shadow: 1px 1px 0 black; }
   .destacado__link {
     display: none;
@@ -281,7 +286,13 @@ header {
     background-color: #242424;
     font-family: 'Questrial', sans-serif;
     border-style: none;
-    border-radius: 3px; }
+    border-radius: 3px;
+    transition: 0.2s; }
+    .articulo__carrito:hover {
+      color: #ebebeb;
+      transform: scale(1.1); }
+    .articulo__carrito:active {
+      transform: scaleZ(-1); }
 
 .nosotros {
   display: flex;
@@ -310,7 +321,13 @@ header {
     background-color: #242424;
     font-family: 'Questrial', sans-serif;
     border-style: none;
-    border-radius: 3px; }
+    border-radius: 3px;
+    transition: 0.2s; }
+    .nosotros__boton:hover {
+      color: #ebebeb;
+      transform: scale(1.1); }
+    .nosotros__boton:active {
+      transform: scaleZ(-1); }
   .nosotros .nosotros__boton a {
     color: #cecece; }
 
@@ -369,14 +386,25 @@ main {
       color: #f3f3f3;
       background-color: #423430;
       border: none;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: 0.2s; }
+      main .form .form__enviarBoton:hover {
+        transform: scale(1.1); }
+      main .form .form__enviarBoton:active {
+        color: #423430;
+        transform: scaleZ(-1); }
     main .form .form__resetearBoton {
       font-family: 'Questrial', sans-serif;
       width: 65%;
       height: 40px;
       color: #423430;
       border: none;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: 0.2s; }
+      main .form .form__resetearBoton:hover {
+        transform: scale(1.1); }
+      main .form .form__resetearBoton:active {
+        transform: scaleZ(-1); }
   main .ubicacion {
     width: 700px;
     height: 750px;
@@ -509,7 +537,8 @@ main {
   .destacado__info {
     width: max-content; }
   .destacado__link {
-    display: block; }
+    display: block;
+    color: #f3f3f3; }
   .destacado__descripcion {
     display: none; }
   .lista {
