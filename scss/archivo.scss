@@ -15,7 +15,7 @@ a{
     font-size: 1.5em;
     padding: 10px;
     width: max-content;
-    color: #cecece;
+    color: #f3f3f3;
     background-color: #242424;
     font-family: 'Questrial', sans-serif;
     border-style: none;
@@ -63,7 +63,7 @@ header{
                 padding: 10px;
                 transition: 0.3s;               
                 &:hover{
-                    background-color: #ebebeb;
+                    background-color: #cecece;
                     border-radius: 5px;
                 }
                 a:link{
@@ -75,19 +75,21 @@ header{
                 }
                 ul{
                     position: absolute;
-                    display: none;
                     li{
                         font-family: 'Questrial', sans-serif;
                         font-weight: 600;
                         font-size: 1.4em;
                         text-shadow: none;
                         display: block;
-                        padding: 8px;
                         background-color: #f3f3f3;
-                        width: 250px;
                         margin-left: -9px;
+                        a{
+                            display: inline-block;
+                            width: 250px;
+                            height: 40px;
+                        }
                         &:hover{
-                            background-color: #ebebeb;
+                            background-color: #cecece;
                             transition: 0.1s;
                         }
                     }
@@ -253,14 +255,14 @@ header{
 }
 .seccion-fondo{
 	font-size: 9em;
-	color: #8a8989;
+	color: #cecece;
 	letter-spacing: 5px;
 	position: absolute;
 	top: 120px;
 	left: 60px;
 	animation-name: aparecerlight;
 	animation-duration: 0.4s;
-	opacity: .15;
+	opacity: .35;
 	cursor: default;
 }
 @keyframes aparecer {
@@ -276,7 +278,7 @@ header{
 	    opacity: 0;
 	}
 	100% {
-	    opacity: .15;
+	    opacity: .35;
 	}
 } 
 
