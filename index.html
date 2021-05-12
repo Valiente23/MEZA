@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body id="index">
 	<header>
 		<a class="logo" href="index.html">MEZA</a>
 	    <nav class="nav">  
@@ -35,96 +35,95 @@
 	        </ul>
 	    </nav>
 	</header>
-	<div class="oferta">
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	<main>
+		<div class="oferta">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				<div class="carousel-item active" >
+					<img src="img/Oferta.webp" class="d-block oferta__img" alt="Cocina">
+				</div>
+				<div class="carousel-item">
+					<img src="img/Oferta2.webp" class="d-block oferta__img" alt="Living">
+				</div>
+				<div class="carousel-item">
+					<img src="img/Oferta3.webp" class="d-block oferta__img" alt="Comedor">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-			<div class="carousel-inner">
-			  <div class="carousel-item active" >
-				<img src="img/Oferta.webp" class="d-block oferta__img" alt="Cocina">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/Oferta2.webp" class="d-block oferta__img" alt="Living">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/Oferta3.webp" class="d-block oferta__img" alt="Comedor">
-			  </div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Next</span>
-			</button>
-		  </div>
-		<p class="oferta__subtitulo">30% de descuento en artículos para tu cocina</p>
-	</div>
-	<section class="destacado">
-		<h1 class="destacado__title">DESTACADO DEL MES</h1>
-		<article class="destacado__topUno">
-            <img class="destacado__img" src="img/Lampara_de_arana_3x3.webp" alt="Lampara de araña">
-			<div class="destacado__info">
-				<p class="destacado__nombre">Lámpara de araña</p>
-				<a class="destacado__link" href="producto1.html">Ver mas</a>
-			    <p class="destacado__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Accusantium officiis consectetur ipsum quisquam nemo? In rerum quos odit quo explicabo
-					sunt ea exercitationem, blanditiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Quis nesciunt corporis sed. Ab, voluptate. Vel commodi minima enim?
-					Assumenda laudantium quia nam. Explicabo quo reprehenderit
-					dolores consequuntur harum iste enim rerum nesciunt animi esse dolore, quisquam excepturi quae repellat error.
-				</p>
-			    <p class="destacado__precio">$2499</p>
-			</div>
-		</article>
-    </section>
-
-	<!-- LISTA PRODUCTOS-->
-
-    <section>
-		<div class="lista">
-		    <article class="lista__topDos">
-		    	<a href="maqueta_naval.html">
-		    	    <img class="lista__img" src="img/Florero_blanco_ceramico.webp" alt="Florero blanco ceramico">
-                    <p class="lista__nombre">Florero blanco cerámico</p>
-                </a>
-		    </article>
-		    <article class="lista__topTres">
-		    	<a href="maqueta_naval.html">
-		    	    <img class="lista__img" src="img/Lampara_moderna.webp" alt="Lampara moderna">
-		    	    <p class="lista__nombre">Lámpara moderna</p>
-		        </a>	    
-		    </article>
-		    <article class="lista__topCuatro">
-		    	<a href="maqueta_naval.html">
-		    		<img class="lista__img" src="img/Silla_de_sala.webp" alt="Silla de sala">
-		    		<p class="lista__nombre">Silla de sala</p>
-		    	</a>
-		    </article>
-		    <article class="lista__topCinco">
-		    	<a href="maqueta_naval.html">
-		    		<img class="lista__img" src="img/Florero_marron_ceramico.webp" alt="Florero marron ceramico">
-		    		<p class="lista__nombre">Florero marrón cerámico</p>
-		    	</a>
-		    </article>
-		    <article class="lista__topSeis">
-		    	<a href="maqueta_naval.html">
-		    		<img class="lista__img" src="img/Cojin_estampado.webp" alt="Cojin estampado">
-		    		<p class="lista__nombre">Cojín estampado</p>
-		    	</a>
-		    </article>
-		    <article class="lista__topSiete">
-		    	<a href="maqueta_naval.html">
-		    		<img class="lista__img" src="img/Junipero_bonsai.webp" alt="Junipero bonsai">
-		    		<p class="lista__nombre">Junipero bonsái</p>
-		    	</a>
-		    </article>
+			<p class="oferta__subtitulo">30% de descuento en artículos para tu cocina</p>
 		</div>
-	</section>
+		<section class="destacado">
+			<h1 class="destacado__title">DESTACADO DEL MES</h1>
+			<article class="destacado__topUno">
+				<img class="destacado__img" src="img/Lampara_de_arana_3x3.webp" alt="Lampara de araña">
+				<div class="destacado__info">
+					<p class="destacado__nombre">Lámpara de araña</p>
+					<a class="destacado__link" href="producto1.html">Ver mas</a>
+					<p class="destacado__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium officiis consectetur ipsum quisquam nemo? In rerum quos odit quo explicabo
+						sunt ea exercitationem, blanditiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Quis nesciunt corporis sed. Ab, voluptate. Vel commodi minima enim?
+						Assumenda laudantium quia nam. Explicabo quo reprehenderit
+						dolores consequuntur harum iste enim rerum nesciunt animi esse dolore, quisquam excepturi quae repellat error.
+					</p>
+					<p class="destacado__precio">$2499</p>
+				</div>
+			</article>
+		</section>
+		<section>
+			<div class="lista">
+				<article class="lista__topDos">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Florero_blanco_ceramico.webp" alt="Florero blanco ceramico">
+						<p class="lista__nombre">Florero blanco cerámico</p>
+					</a>
+				</article>
+				<article class="lista__topTres">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Lampara_moderna.webp" alt="Lampara moderna">
+						<p class="lista__nombre">Lámpara moderna</p>
+					</a>	    
+				</article>
+				<article class="lista__topCuatro">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Silla_de_sala.webp" alt="Silla de sala">
+						<p class="lista__nombre">Silla de sala</p>
+					</a>
+				</article>
+				<article class="lista__topCinco">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Florero_marron_ceramico.webp" alt="Florero marron ceramico">
+						<p class="lista__nombre">Florero marrón cerámico</p>
+					</a>
+				</article>
+				<article class="lista__topSeis">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Cojin_estampado.webp" alt="Cojin estampado">
+						<p class="lista__nombre">Cojín estampado</p>
+					</a>
+				</article>
+				<article class="lista__topSiete">
+					<a href="maqueta_naval.html">
+						<img class="lista__img" src="img/Junipero_bonsai.webp" alt="Junipero bonsai">
+						<p class="lista__nombre">Junipero bonsái</p>
+					</a>
+				</article>
+			</div>
+		</section>
+	</main>
 	<footer class="footer">
 		<p class="footer__copyright">©Copyright - Todos los derechos reservados</p>
 		<div class="footer__follow">

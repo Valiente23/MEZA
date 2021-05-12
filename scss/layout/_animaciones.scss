@@ -1,0 +1,27 @@
+body{
+    font-family: 'League', sans-serif;
+    &::-webkit-scrollbar{
+        width: 14px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #cecece;
+        border: 2px solid #f3f3f3;
+        border-radius: 7px;
+    }
+}
+@keyframes aparecer {
+	0% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+@keyframes aparecerlight {
+	0% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: .35;
+	}
+}

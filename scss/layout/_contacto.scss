@@ -1,0 +1,235 @@
+#contacto{
+    main{
+        .seccion{
+            font-size: 3em;
+            color: #242424;
+            text-align: right;
+            margin: 60px 20px 100px 0;
+            animation-name: aparecer;
+            animation-duration: 2s;
+            cursor: default;
+        }
+        .seccion-fondo{
+            font-size: 9em;
+            color: #cecece;
+            letter-spacing: 5px;
+            position: absolute;
+            top: 120px;
+            left: 60px;
+            animation-name: aparecerlight;
+            animation-duration: 0.4s;
+            opacity: .35;
+            cursor: default;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0 100px 0;
+            flex-wrap: wrap;
+            .form{
+                text-align: center;
+                .form__contacto{
+                    background-color: #242424;
+                    display: inline-block;
+                    width: 700px;
+                    height: 750px;
+                    padding: 30px;
+                }
+                form label{
+                    font-size: 1.2em;
+                    font-family: 'Questrial', sans-serif;
+                    color: #f3f3f3;
+                    text-shadow: 2px 2px 0 #352A27;
+                    display: inline-block;
+                    margin: 5px;
+                    text-shadow: 1px 1px #423430;
+                }
+                .form__inputText{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.2em;
+                    color: #352A27;
+                    margin: 10px;
+                    padding-left: 15px;
+                    width: 65%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 2px;
+                }
+                input:focus, textarea:focus{
+                    color: #352A27;
+                    outline: none;
+                    background-color: #dddada;
+                }
+                .form__textArea{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.2em;
+                    color: #352A27;
+                    margin: 10px;
+                    padding: 10px 0 0 15px;
+                    width: 65%;
+                    height: 200px;
+                    resize: none;
+                    border: none;
+                    border-radius: 2px;
+                }
+                .form__enviarBoton{
+                    font-family: 'Questrial', sans-serif;
+                    width: 65%;
+                    height: 40px;
+                    margin: 15px;
+                    color: #f3f3f3;
+                    background-color: #423430;
+                    border: none;
+                    border-radius: 2px;
+                    transition: 0.2s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &:active{
+                        color: #423430;
+                        transform: scaleZ(-1);
+                    }
+                }
+                
+                .form__resetearBoton{
+                    font-family: 'Questrial', sans-serif;
+                    width: 65%;
+                    height: 40px;
+                    color: #423430;
+                    border: none;
+                    border-radius: 2px;
+                    transition: 0.2s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &:active{
+                        transform: scaleZ(-1);
+                    }
+                }
+            }
+            .ubicacion{
+                width: 700px;
+                height: 750px;
+                text-align: center;
+                background-color: #e4e5e6;
+                padding: 100px;
+                &__map{
+                    border-radius: 2px;
+                    transition: 0.4s;
+                    width: 450px;
+                    height: 280px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                &__title{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.5em;
+                    color: #242424;
+                    margin: 50px 0 20px 0;
+                    display: block;
+                }
+                &__data{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.2em;
+                    color: #352A27;
+                    margin: 10px;
+                    display: block;
+                }
+                &__subtitle{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.5em;
+                    color: #242424;
+                    margin: 20px 0 5px 0;
+                    display: block;
+                }
+                &__redesIcon{
+                    width: 30px;
+                    margin: 10px 0 90px 0;
+                    transition: 0.2s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//media queries
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    #mainContacto{
+        div{
+            margin: 0 0 100px 0;
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #mainContacto{
+        div{
+            margin: 60px 0 100px 0;
+            .form{
+                .form__contacto{
+                    width: 90vw;
+                    height: 750px;
+                    padding: 20px 0 20px 0;
+                }
+                form label{
+                    font-size: 1em;
+                    margin: 5px;
+                }
+                .form__inputText{
+                    width: 80%;
+                    font-size: 1em;
+                }
+                .form__textArea{
+                    font-size: 1em;
+                    padding: 10px 0 0 15px;
+                    width: 80%;
+                }
+                .form__enviarBoton{
+                    width: 80%;
+                }
+                .form__resetearBoton{
+                    width: 80%;
+                }
+            }
+            .ubicacion{
+                
+                height: 680px;
+                width: 90vw;
+                padding: 90px 0 0 0;
+                &__map{
+                    width: 80%;
+                }
+                &__title{
+                    font-size: 1.2em;
+                }
+                &__data{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1em;
+                }
+                &__subtitle{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.2em;
+                    color: #242424;
+                    margin: 20px 0 5px 0;
+                }
+                &__redesIcon{
+                    width: 25px;
+                    margin: 10px 0 0px 0;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px){
+    #mainContacto{
+        div{
+            margin: 40px 0 100px 0;
+        }
+    }
+}
