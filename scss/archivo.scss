@@ -1,25 +1,32 @@
+//variables y animaciones
+
+@import 'layout/animaciones';
+@import 'layout/variables';
+
+//estilos generales
+
 @font-face{
 	font-family: 'League';
 	src: url(../fuentes/League.otf);
 }
-//Variables y animaciones
-
-@import 'layout/variables';
-@import 'layout/animaciones';
-
 *{
     text-decoration: none;
 	box-sizing: border-box;
 	animation-name: aparecer;
 	animation-duration: 0.3s;
 }
+a{
+    text-decoration: none;
+}
 
-//Secciones
+//secciones
 
 @import 'layout/header';
 @import 'layout/index';
+@import 'layout/secciones';
 @import 'layout/productos';
 @import 'layout/articulo';
 @import 'layout/nosotros';
 @import 'layout/contacto';
 @import 'layout/footer';
+@import 'layout/responsive';

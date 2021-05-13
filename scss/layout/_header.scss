@@ -1,7 +1,4 @@
 header{
-    a{
-        text-decoration: none;
-    }
 	text-decoration: none;
 	display: flex;
 	background-color:white;
@@ -29,7 +26,7 @@ header{
                 padding: 10px;
                 transition: 0.3s;               
                 &:hover{
-                    background-color: #cecece;
+                    background-color: #ebebeb;
                     border-radius: 5px;
                 }
                 a:link{
@@ -42,23 +39,18 @@ header{
                 ul{
                     position: absolute;
                     display: none;
-                    padding: 0;
                     li{
                         font-family: 'Questrial', sans-serif;
                         font-weight: 600;
                         font-size: 1.4em;
                         text-shadow: none;
                         display: block;
+                        padding: 8px;
                         background-color: #f3f3f3;
+                        width: 250px;
                         margin-left: -9px;
-                        a{
-                            display: inline-block;
-                            width: 250px;
-                            height: 40px;
-                            padding: 8px;
-                        }
                         &:hover{
-                            background-color: #cecece;
+                            background-color: #ebebeb;
                             transition: 0.1s;
                         }
                     }
@@ -68,47 +60,6 @@ header{
                     padding-top: 10px;
                 }
             }
-        }
-    }
-}
-
-//media queries
-
-
-@media only screen and (min-width: 480px) and (max-width: 600px){
-	header{
-		text-decoration: none;
-		display: flex;
-		flex-direction: column;
-		background-color:white;
-		align-items: center;
-		justify-content: space-between;
-		height: 10vh;
-        padding-bottom: 105px;
-        .logo{
-            font-size: 2em;
-            font-weight: 200;
-            margin: 10px 0 0 0;
-            color: #242424;
-            text-shadow: 2px 2px 0px grey;
-        }
-        nav{
-            margin: 0;
-        }
-	}
-}
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    header{
-        .nav{
-            margin-right: 0px;
-            .nav__ul{
-                margin: 10px 0;
-                .nav__li{
-                padding: 5px;
-                transition: 0.3s;
-                font-size: .9em;
-                } 
-            } 
         }
     }
 }

@@ -1,0 +1,564 @@
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+	.seccion{
+		font-size: 3em;
+		color: #242424;
+		text-align: right;
+		margin: 60px 20px 100px 0;
+		animation-name: aparecer;
+		animation-duration: 2s;
+		cursor: default;
+	}
+	.seccion-fondo{
+		display: inline-block;
+		font-size: 7em;
+		color: #8a8989;
+		letter-spacing: 5px;
+		position: absolute;
+		top: 120px;
+		left: 60px;
+		animation-name: aparecerlight;
+		animation-duration: 0.4s;
+		opacity: .15;
+		cursor: default;
+	}
+	.productos{
+		grid-template-columns: 350px 350px 350px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+	.oferta{    
+        .d-block{
+            height: 600px;
+        }
+    }
+    .destacado{
+        &__title{
+            font-size: 1.8em;
+        }
+        &__nombre{
+            font-size: 1.5em;
+        }
+        &__precio{
+            font-size: 1em;
+        }  
+    }
+	.lista{
+		display: grid;
+		grid-template-columns: 300px 300px 300px;
+		grid-template-rows: 470px 470px;
+	}
+	.seccion{
+		font-size: 2.5em;
+		color: #242424;
+		text-align: right;
+		margin: 60px 20px 100px 0;
+		animation-name: aparecer;
+		animation-duration: 2s;
+		cursor: default;
+	}
+	.seccion-fondo{
+		display: inline-block;
+		font-size: 5em;
+		color: #8a8989;
+		letter-spacing: 5px;
+		position: absolute;
+		top: 120px;
+		left: 60px;
+		animation-name: aparecerlight;
+		animation-duration: 0.4s;
+		opacity: .15;
+		cursor: default;
+	}
+	.productos{
+		grid-template-columns: 300px 300px 300px;
+		grid-template-rows: 490px 490px 490px 490px;
+	}
+    .articulo{
+        margin: 30px 0 60px 0;
+        &__img{
+            width: 500px
+        }
+        &__data{
+            width: 550px;
+            padding: 30px;
+        }
+    }
+    .nosotros{
+        flex-direction: column;
+        margin: 0 0 100px 0;
+        &__img{
+            width: 80%;
+            height: 500px;
+            margin: 0 0 60px 0;
+            transition: 0.3s;
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        &__info{
+            width: 80%;
+        }
+        &__descripcion{
+            margin-bottom: 20px
+        }
+    }
+    .contenedor{
+            margin: 0 0 100px 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.oferta{
+        .d-block{
+            height: 550px;
+        }
+    }
+    .destacado{
+        &__topUno{
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+        &__img{
+            width: 250px;
+        }
+        &__info{
+            width: max-content;
+        }
+        &__link{
+            display: block;
+            color: #f3f3f3;
+        }
+        &__descripcion{
+            display: none;
+        }
+    }
+	.lista{
+		display: grid;
+		grid-template-columns: 300px 300px;
+		grid-template-rows: 480px 480px 480px;
+	}
+	.seccion{
+		font-size: 2em;
+		color: #242424;
+		text-align: right;
+		margin: 60px 20px 100px 0;
+		animation-name: aparecer;
+		animation-duration: 2s;
+		cursor: default;
+	}
+	.seccion-fondo{
+		display: inline-block;
+		font-size: 4em;
+		color: #8a8989;
+		letter-spacing: 5px;
+		position: absolute;
+		top: 120px;
+		left: 60px;
+		animation-name: aparecerlight;
+		animation-duration: 0.4s;
+		opacity: .15;
+		cursor: default;
+	}
+	.productos{
+		grid-template-columns: 300px 300px;
+		grid-template-rows: 390px 390px 390px 390px 390px 390px;
+		grid-column-gap: 40px;
+        &__img{
+            height: 300px;
+            object-fit: cover;
+        }
+	}
+    .articulo{
+        align-items: center;
+        flex-direction: column;
+        &__img{
+            width: 80%;
+            height: 600px;
+            object-fit: cover;
+        }
+        &__data{
+            width: 80%;
+        }
+    }
+    .nosotros{
+        &__img{
+            width: 90%;
+            height: 450px;
+            object-fit: cover;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        &__info{
+            width: 90%;
+        }
+        &__titulo{
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #242424;
+        }
+        &__descripcion{
+            margin-bottom: 20px
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .oferta{
+        .d-block{
+            height: 430px;
+        }
+    }
+    .destacado{
+        &__topUno{
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+        &__img{
+            width: 200px;
+        }
+        &__info{
+            width: max-content;
+        }
+        &__link{
+            display: block;
+        }
+        &__descripcion{
+            display: none;
+        }
+    }
+	.lista{
+		display: grid;
+		grid-template-columns: 280px 280px;
+		grid-template-rows: 420px 420px 420px;
+        &__img{
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+	.seccion{
+		font-size: 2em;
+		color: #242424;
+		text-align: right;
+		margin: 40px 20px 0px 0;
+		animation-name: aparecer;
+		animation-duration: 2s;
+		cursor: default;
+	}
+	.seccion-fondo{
+		display: none;
+	}
+	.productos{
+		margin: 30px 0 50px 0;
+		grid-template-columns: 300px 300px;
+		grid-template-rows: 390px 390px 390px 390px 390px 390px;
+		grid-column-gap: 30px;
+        &__img{
+            height: 300px;
+            object-fit: cover;
+	    }
+	}
+    .articulo{
+        &__img{
+            width: 80%;
+            height: 400px;
+            object-fit: cover;
+        }
+        &__data{
+            width: 80%;
+        }
+    }
+    .nosotros{
+        &__img{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            object-fit: cover;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .contenedor{
+            margin: 60px 0 100px 0;
+            .form{
+                width: 90vw;
+                .form__contacto{
+                    width: 90vw;
+                    height: 750px;
+                    padding: 20px 0 20px 0;
+                }
+                form label{
+                    font-size: 1em;
+                    margin: 5px;
+                }
+                .form__inputText{
+                    width: 80%;
+                    font-size: 1em;
+                }
+                .form__textArea{
+                    font-size: 1em;
+                    padding: 10px 0 0 15px;
+                    width: 80%;
+                }
+                .form__enviarBoton{
+                    width: 80%;
+                }
+                .form__resetearBoton{
+                    width: 80%;
+                }
+            }
+            .ubicacion{
+                width: 90vw;
+                height: 680px;
+                padding: 90px 0 0 0;
+                &__map{
+                    width: 80%;
+                }
+                &__title{
+                    font-size: 1.2em;
+                }
+                &__data{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1em;
+                }
+                &__subtitle{
+                    font-family: 'Questrial', sans-serif;
+                    font-size: 1.2em;
+                    color: #242424;
+                    margin: 20px 0 5px 0;
+                }
+                &__redesIcon{
+                    width: 25px;
+                    margin: 10px 0 0px 0;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+@media only screen and (min-width: 480px) and (max-width: 600px){
+	header{
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		background-color:white;
+		align-items: center;
+		justify-content: space-between;
+		height: 10vh;
+        padding-bottom: 105px;
+        .logo{
+            font-size: 2em;
+            font-weight: 200;
+            margin: 10px 0 0 0;
+            color: #242424;
+            text-shadow: 2px 2px 0px grey;
+        }
+        nav{
+            margin: 0;
+        }
+	}
+    .oferta{
+        .carousel-item{
+            height: 320px;
+        }
+        &__subtitulo{
+            display: none;
+        }  
+    }
+    .destacado{
+        &__title{
+            font-size: 1em;
+            padding: 25px;
+        }
+        &__topUno{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            padding: 0 0 20px 0;
+        }
+        &__img{
+            margin: 0;
+            width: 70%;
+            height: 250px;
+            object-fit: cover;
+        }
+        &__info{
+            width: max-content;
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+        &__link{
+            display: block;
+        }
+        &__nombre{
+            font-size: 1em;
+        }
+        &__link{
+            font-size: 1em;
+        }
+        &__precio{
+            font-size: .7em;
+            padding: 13px;
+        }
+        &__descripcion{
+            display: none;
+        }
+    }
+	.lista{
+		display: grid;
+		grid-template-columns: 200px 200px;
+		grid-template-rows: 350px 350px 350px;
+        &__img{
+            height: 280px;
+            object-fit: cover;
+        }
+        &__nombre{
+            font-size: 1em;
+        }
+	}
+	.seccion{
+		font-size: 1.5em;
+		text-align: center;
+		margin: 10px 0 0 0;
+	}
+	.seccion-fondo{
+		display: none;
+	}
+	.productos{
+		margin: 10px 0 50px 0;
+		grid-template-columns: 60vw;
+        &__img{
+            height: 300px;
+            object-fit: cover;
+        }
+	}
+    .articulo{
+        align-items: center;
+        flex-direction: column;
+        &__img{
+            width: 90%;
+            height: 330px;
+            object-fit: cover;
+        }
+        &__data{
+            width: 85%;
+            padding: 0;
+        }
+    }
+    .nosotros{
+        &__img{
+            margin-top: 50px;
+            width: 90%;
+            height: 300px;
+            object-fit: cover;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .contenedor{
+        margin: 40px 0 100px 0;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 480px){
+    header{
+        .nav{
+            margin-right: 0px;
+            .nav__ul{
+                margin: 10px 0;
+                .nav__li{
+                padding: 5px;
+                transition: 0.3s;
+                font-size: .9em;
+                } 
+            } 
+        }
+    }
+    .oferta{
+        height: 200px;
+        .carousel{
+            height: 200px;
+            .d-block{
+                height: 200px;
+            }
+        }
+    }
+	.destacado__img{
+		margin: 0;
+		width: 70%;
+		height: 200px;
+		object-fit: cover;
+	}
+	.lista{
+		display: grid;
+		grid-template-columns: 80vw;
+		grid-template-rows: 350px 350px 350px 350px;	
+        &__img{
+            height: 280px;
+            object-fit: cover;
+        }
+        &__nombre{
+            font-size: 1em;
+        }
+    }
+	.productos{
+		margin: 10px 0 50px 0;
+		grid-template-columns: 70vw;
+		&__img{
+		height: 300px;
+		object-fit: cover;
+	    }
+    }
+    .articulo{
+        align-items: center;
+        flex-direction: column;
+        &__img{
+            width: 90%;
+            height: 280px;
+            object-fit: cover;
+        }
+        &__data{
+            width: 85%;
+            padding: 0;
+        }
+        &__descripcion{
+            font-size: 1em;
+        }
+        &__precio{
+            font-size: 1.5em;
+        }
+        &__carrito{
+            font-size: 1em;
+        }
+    }
+    .nosotros{
+        &__img{
+            margin-top: 30px;
+            width: 85%;
+            height: 300px;
+            object-fit: cover;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        &__info{
+            width: 85%;
+        }
+        &__titulo{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #242424;
+        }
+        &__descripcion{
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+    }
+}

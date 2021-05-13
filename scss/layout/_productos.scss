@@ -1,207 +1,32 @@
-#productos{
-    main{
-        .seccion{
-            font-size: 3em;
-            color: #242424;
-            text-align: right;
-            margin: 60px 20px 100px 0;
-            animation-name: aparecer;
-            animation-duration: 2s;
-            cursor: default;
-        }
-        .seccion-fondo{
-            font-size: 9em;
-            color: #cecece;
-            letter-spacing: 5px;
-            position: absolute;
-            top: 120px;
-            left: 60px;
-            animation-name: aparecerlight;
-            animation-duration: 0.4s;
-            opacity: .35;
-            cursor: default;
-        }
-        .productos{
-            display: grid;
-            grid-template-columns: 350px 350px 350px 350px;
-            grid-template-rows: 570px 570px 570px;
-            grid-column-gap: 10px;
-            grid-row-gap: 40px;
-            width: 100%;
-            margin: 100px 0 100px 0;
-            justify-content: center;
-            text-align: center;
-            &__box{
-            padding: 10px;
-            border-radius: 2px;
-                &:hover{
-                    box-shadow: 0 0 7px #cecece;
-                }
-            }
-            a{
-                text-decoration: none;
-            }
-            &__img{
-                width: 100%;
-            }
-            &__nombre{
-                font-size: 1.2em;
-                font-family: 'Questrial', sans-serif;
-                font-weight: 600;
-                margin: 20px 0 10px 0;
-                color: #242424;
-                margin-bottom: 0;
-            }
-            &__precio{
-                font-size: 1em;
-                font-family: 'Questrial', sans-serif;
-                font-weight: 200;
-                color: #242424;
-                margin: 0 0 10px 0;
-            }
+.productos{
+	display: grid;
+	grid-template-columns: 350px 350px 350px 350px;
+	grid-template-rows: 570px 570px 570px;
+	grid-column-gap: 10px;
+	grid-row-gap: 40px;
+	width: 100%;
+	margin: 100px 0 100px 0;
+	justify-content: center;
+	text-align: center;
+    &__box{
+	padding: 10px;
+    border-radius: 2px;
+        &:hover{
+            box-shadow: 0 0 7px #cecece;
         }
     }
-}
-
-//media queries
-
-@media only screen and (min-width: 1200px) and (max-width: 1500px){
-	.seccion{
-		font-size: 3em;
-		color: #242424;
-		text-align: right;
-		margin: 60px 20px 100px 0;
-		animation-name: aparecer;
-		animation-duration: 2s;
-		cursor: default;
-	}
-	.seccion-fondo{
-		display: inline-block;
-		font-size: 7em;
-		color: #8a8989;
-		letter-spacing: 5px;
-		position: absolute;
-		top: 120px;
-		left: 60px;
-		animation-name: aparecerlight;
-		animation-duration: 0.4s;
-		opacity: .15;
-		cursor: default;
-	}
-	.productos{
-		grid-template-columns: 350px 350px 350px;
-	}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1200px){
-	.seccion{
-		font-size: 2.5em;
-		color: #242424;
-		text-align: right;
-		margin: 60px 20px 100px 0;
-		animation-name: aparecer;
-		animation-duration: 2s;
-		cursor: default;
-	}
-	.seccion-fondo{
-		display: inline-block;
-		font-size: 5em;
-		color: #8a8989;
-		letter-spacing: 5px;
-		position: absolute;
-		top: 120px;
-		left: 60px;
-		animation-name: aparecerlight;
-		animation-duration: 0.4s;
-		opacity: .15;
-		cursor: default;
-	}
-	.productos{
-		grid-template-columns: 300px 300px 300px;
-		grid-template-rows: 490px 490px 490px 490px;
-	}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-	.seccion{
-		font-size: 2em;
-		color: #242424;
-		text-align: right;
-		margin: 60px 20px 100px 0;
-		animation-name: aparecer;
-		animation-duration: 2s;
-		cursor: default;
-	}
-	.seccion-fondo{
-		display: inline-block;
-		font-size: 4em;
-		color: #8a8989;
-		letter-spacing: 5px;
-		position: absolute;
-		top: 120px;
-		left: 60px;
-		animation-name: aparecerlight;
-		animation-duration: 0.4s;
-		opacity: .15;
-		cursor: default;
-	}
-	.productos{
-		grid-template-columns: 300px 300px;
-		grid-template-rows: 390px 390px 390px 390px 390px 390px;
-		grid-column-gap: 40px;
-        &__img{
-            height: 300px;
-            object-fit: cover;
-        }
-	}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px){
-	.seccion{
-		font-size: 2em;
-		color: #242424;
-		text-align: right;
-		margin: 40px 20px 0px 0;
-		animation-name: aparecer;
-		animation-duration: 2s;
-		cursor: default;
-	}
-	.seccion-fondo{
-		display: none;
-	}
-	.productos{
-		margin: 30px 0 50px 0;
-		grid-template-columns: 300px 300px;
-		grid-template-rows: 390px 390px 390px 390px 390px 390px;
-		grid-column-gap: 30px;
-        &__img{
-            height: 300px;
-            object-fit: cover;
-	    }
-	}
-}
-@media only screen and (min-width: 480px) and (max-width: 600px){
-	.seccion{
-		font-size: 1.5em;
-		text-align: center;
-		margin: 10px 0 0 0;
-	}
-	.seccion-fondo{
-		display: none;
-	}
-	.productos{
-		margin: 10px 0 50px 0;
-		grid-template-columns: 60vw;
-        &__img{
-            height: 300px;
-            object-fit: cover;
-        }
-	}
-}
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    .productos{
-		margin: 10px 0 50px 0;
-		grid-template-columns: 70vw;
-		&__img{
-		height: 300px;
-		object-fit: cover;
-	    }
+    &__img{
+        width: 100%;
+    }
+    &__nombre{
+        @extend .lista__nombre;
+        margin-bottom: 0;
+    }
+    &__precio{
+        font-size: 1em;
+        font-family: 'Questrial', sans-serif;
+        font-weight: 200;
+        color: #242424;
+        margin: 0 0 10px 0;
     }
 }
