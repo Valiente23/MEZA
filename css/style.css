@@ -450,7 +450,7 @@ header {
     .footer__icon:hover {
       transform: scale(1.1); }
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
   .seccion {
     font-size: 3em;
     color: #242424;
@@ -474,7 +474,7 @@ header {
   .productos {
     grid-template-columns: 350px 350px 350px; } }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .oferta .d-block {
     height: 600px; }
   .destacado__title {
@@ -535,7 +535,7 @@ header {
   .contenedor {
     margin: 0 0 100px 0; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .oferta .d-block {
     height: 550px; }
   .destacado__topUno {
@@ -607,7 +607,7 @@ header {
   .nosotros__descripcion {
     margin-bottom: 20px; } }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .oferta .d-block {
     height: 430px; }
   .destacado__topUno {
@@ -704,7 +704,7 @@ header {
         margin: 10px 0 0px 0;
         transition: 0.2s; } }
 
-@media only screen and (min-width: 480px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   header {
     text-decoration: none;
     display: flex;
@@ -797,11 +797,12 @@ header {
   .contenedor {
     margin: 40px 0 100px 0; } }
 
-@media only screen and (min-width: 480px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   header .nav {
     margin-right: 0px; }
     header .nav .nav__ul {
-      margin: 10px 0; }
+      margin: 0px;
+      padding: 0px; }
       header .nav .nav__ul .nav__li {
         padding: 5px;
         transition: 0.3s;
