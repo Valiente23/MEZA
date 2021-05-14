@@ -153,6 +153,10 @@ header {
     color: #f3f3f3;
     text-shadow: 1px 1px 0 black;
     font-family: 'Questrial', sans-serif; }
+    .destacado__descripcion span {
+      margin: 10px 0;
+      display: block;
+      font-weight: 700; }
   .destacado__precio {
     font-size: 1em;
     color: #f3f3f3;
@@ -285,11 +289,13 @@ header {
     .nosotros__img:hover {
       transform: scale(1.1); }
   .nosotros__info {
-    width: 800px; }
+    width: 630px; }
   .nosotros__titulo {
     font-size: 3em;
     margin-bottom: 30px;
     color: #242424; }
+  .nosotros__descripcion span {
+    font-weight: 700; }
   .nosotros__boton {
     font-size: 1.5em;
     padding: 10px;

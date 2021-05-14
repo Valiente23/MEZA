@@ -14,7 +14,7 @@
         }
     }
     &__info{
-        width: 800px;
+        width: 630px;
     }
     &__titulo{
         font-size: 3em;
@@ -23,6 +23,9 @@
     }
     &__descripcion{
         @extend .articulo__descripcion;
+        span{
+            font-weight: 700;
+        }
     }
     &__boton{
         @include boton;

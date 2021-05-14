@@ -75,6 +75,11 @@
         color: #f3f3f3;
         text-shadow: 1px 1px 0 black;
         font-family: 'Questrial', sans-serif;
+        span{
+            margin: 10px 0;
+            display: block;
+            font-weight: 700;
+        }
     }
     &__precio{
         font-size: 1em;
